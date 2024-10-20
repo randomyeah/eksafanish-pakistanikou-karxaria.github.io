@@ -1,0 +1,32 @@
+.navbar {
+    font-family: Arial;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    position: absolute;
+    background-color: blue;
+    width: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
+    height: 100px;
+    z-index: 100;
+}
+
+.links {
+    margin-left: 15px;
+}
+
+.links a {
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    margin-right: 20px;
+    transition: 0.3s;
+}
+
+
+.links a:hover {
+    color: gray;
+}

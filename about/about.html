@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="about.css">
+    <link rel="stylesheet" href="../style/navbar.css">
+    <title>Document</title>
+</head>
+<body style="margin-top: 120px;">
+
+    <header>
+        <nav class="navbar">
+            <div class="links">
+                <a href="../home/home.html">Home</a>
+                <a href="about.html" style="text-decoration: underline;">About pakistanikos karcharias</a>
+            </div>
+        </nav>
+    </header>
+
+    <body>
+        <div class="boxes">
+            <div class="box1">
+                <h2>Ο πακιστανικός καρχαρίας είχε πολλά ταλέντα</h2>
+                <p class="ip-info"></p>
+                <img class="hacker-shark" src="../images/hacker-shark.jpg" alt="">
+            </div>
+            <div class="box2">
+                <h2>Έχει και άλλα ταλέντα όπου αν τα πούμε θα τον κυνηγήσει το FBI</h2>
+                <h2>Φήμες λένε ότι μπορεί να τον απήγαγαν η πακιστανική καρχαρίες μαφία.</h2>
+                <img class="mafia-shark" src="../images/mafia-shark.png" alt="">
+            </div>
+        </div>
+
+        <div class="title-box">
+            <h2 style="color: red; font-weight: bold; font-family: Arial;">ΑΝ ΤΟΝ ΒΡΕΪΤΑΙ ΤΗΛΕΦΩΝΉΣΤΑΙ :)</h2>
+        </div>
+    </body>
+
+    <script type="application/javascript">
+        function sound() {
+            let audio =  new Audio("../sounds/dexter.mp3");
+            audio.play();
+        }
+        sound();
+        let ipInfo = document.querySelector(".ip-info");
+        function getIP(json) {
+            ipInfo.innerHTML = "Όπως να σου βρίσκει την IP: " + json.ip;
+        }
+      </script>
+    <script type="application/javascript" src="https://api.ipify.org?format=jsonp&callback=getIP"></script>
+
+</body>
+</html>

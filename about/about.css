@@ -1,0 +1,60 @@
+.boxes {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.box1 {
+    font-family: Arial;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: 560px;
+    height: 100px;
+    background-color: aqua;
+    border-radius: 10px;
+    height: 300px;
+    z-index: 100;
+}
+
+.hacker-shark {
+    margin-bottom: 100px;
+    mix-blend-mode: multiply;
+}
+
+.box2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+    color: white;
+    border-radius: 10px;
+    font-family: Arial;
+}
+
+.mafia-shark {
+    width: 100%;
+    width: 620px;
+    height: 200px;
+    margin-bottom: 5px;
+    border-radius: 10px;
+}
+
+.title-box {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    height: 30vh;
+}
+
+@media only screen and (max-width: 1167px) {
+    .boxes {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    .box1 {
+        margin-bottom: 100px;
+    }
+}
